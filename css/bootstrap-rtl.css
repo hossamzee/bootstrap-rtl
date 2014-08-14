@@ -5,3 +5,20 @@
 html {
 	direction: rtl;
 }
+
+@media (min-width: 768px) {
+	.navbar-header {
+		float: right;
+	}
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
+
+    .navbar-nav > li {
+        float: right;
+    }
+}
