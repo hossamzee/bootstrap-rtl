@@ -22,3 +22,13 @@ html {
         float: right;
     }
 }
+
+.navbar-toggle {
+    float: left;
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+.navbar-brand {
+    float: right;
+}
