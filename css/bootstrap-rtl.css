@@ -4,6 +4,7 @@
 
 * {
     -webkit-margin-start: 0;
+    -webkit-padding-start: 0;
 }
 
 html {
@@ -383,7 +384,85 @@ th {
     left: 0;
 }
 
-/* Navigation. */
+/* Dropdowns. */
+
+.dropdown-menu {
+    left: auto;
+    right: 0;
+    float: right;
+    text-align: right;
+}
+
+/* Button groups. */
+
+.btn-group > .btn,
+.btn-group-vertical > .btn {
+    float: right;
+}
+
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child) {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-toolbar .btn-group,
+.btn-toolbar .input-group {
+    float: right;
+}
+
+.btn-group > .btn-group:last-child > .btn:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+/* TODO: First child of button control seems to have a 2x border width. */
+/* TODO: Justified button groups have some issues. */
+
+/* Input groups. */
+
+.input-group-addon:last-child {
+    border-right: 0;
+    border-left: 1px solid #ccc;
+}
+
+/* TODO: There is an issue with the middle button. */
+
+/* Navs. */
+
+.nav-tabs > li {
+    float: right;
+}
+
+.nav-tabs > li + li {
+    margin-right: 2px;
+    margin-left: 0;
+}
+
+.nav-pills > li {
+    float: right;
+}
+
+.nav-pills > li + li {
+    margin-right: 2px;
+    margin-left: 0;
+}
+
+/* TODO: nav-stacked has some issues. */
+/* TODO: nav-pills has some issue when justifying. */
+
+/* Navbar. */
 
 @media (min-width: 768px) {
     .navbar-header {
@@ -410,4 +489,69 @@ th {
 
 .navbar-brand {
     float: right;
+}
+
+@media (min-width: 768px) {
+    .container > .navbar-header,
+    .container-fluid > .navbar-header,
+    .container > .navbar-collapse,
+    .container-fluid > .navbar-collapse {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-text {
+        float: right;
+    }
+}
+
+/* Breadcrumbs. */
+
+.pagination > li > a,
+.pagination > li > span {
+    float: right;
+    margin-right: -1px;
+    margin-left: 0;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Pagination. */
+
+.pager .next > a,
+.pager .next > span {
+    float: left;
+}
+
+.pager .previous > a,
+.pager .previous > span {
+    float: right;
+}
+
+/* Progress bars. */
+
+.progress-bar {
+    float: right;
+}
+
+/* List group. */
+
+.list-group-item > .badge {
+    float: left;
 }
