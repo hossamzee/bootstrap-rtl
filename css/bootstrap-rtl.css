@@ -555,3 +555,11 @@ th {
 .list-group-item > .badge {
     float: left;
 }
+
+/* Modals. */
+
+.close {
+    float: left;
+}
+
+/* TODO: Carousel. */
