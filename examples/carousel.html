@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="../css/bootstrap-rtl.min.css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+
+      /* GLOBAL STYLES
+      -------------------------------------------------- */
+      /* Padding below the footer and lighter body text */
+
+      body {
+        padding-bottom: 40px;
+        color: #5a5a5a;
+      }
+
+
+
+      /* CUSTOMIZE THE NAVBAR
+      -------------------------------------------------- */
+
+      /* Special class on .container surrounding .navbar, used for positioning it into place. */
+      .navbar-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 20;
+      }
+
+      /* Flip around the padding for proper display in narrow viewports */
+      .navbar-wrapper > .container {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .navbar-wrapper .navbar {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .navbar-wrapper .navbar .container {
+        width: auto;
+      }
+
+
+      /* CUSTOMIZE THE CAROUSEL
+      -------------------------------------------------- */
+
+      /* Carousel base class */
+      .carousel {
+        height: 500px;
+        margin-bottom: 60px;
+      }
+      /* Since positioning the image, we need to help out the caption */
+      .carousel-caption {
+        z-index: 10;
+      }
+
+      /* Declare heights because of positioning of img element */
+      .carousel .item {
+        height: 500px;
+        background-color: #777;
+      }
+      .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 500px;
+      }
+
+      /* MARKETING CONTENT
+      -------------------------------------------------- */
+
+      /* Center align the text within the three columns below the carousel */
+      .marketing .col-lg-4 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .marketing h2 {
+        font-weight: normal;
+      }
+      .marketing .col-lg-4 p {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      /* Featurettes
+      ------------------------- */
+
+      .featurette-divider {
+        margin: 80px 0; /* Space out the Bootstrap <hr> more */
+      }
+
+      /* Thin out the marketing عنوانs */
+      .featurette-عنوان {
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -1px;
+      }
+
+      /* RESPONSIVE CSS
+      -------------------------------------------------- */
+
+      @media (min-width: 768px) {
+
+        /* Navbar positioning foo */
+        .navbar-wrapper {
+          margin-top: 20px;
+        }
+        .navbar-wrapper .container {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+        .navbar-wrapper .navbar {
+          padding-right: 0;
+          padding-left: 0;
+        }
+
+        /* The navbar becomes detached from the top, so we round the corners */
+        .navbar-wrapper .navbar {
+          border-radius: 4px;
+        }
+
+        /* Bump up size of carousel content */
+        .carousel-caption p {
+          margin-bottom: 20px;
+          font-size: 21px;
+          line-height: 1.4;
+        }
+
+        .featurette-عنوان {
+          font-size: 50px;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .featurette-عنوان {
+          margin-top: 120px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">اسم المشروع</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">الأولى</a></li>
+                <li><a href="#about">النبذة</a></li>
+                <li><a href="#contact">الإتّصال</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">قائمة منسدلة <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">قرار</a></li>
+                    <li><a href="#">قرار آخر</a></li>
+                    <li><a href="#">شيئ آخر هنا</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">الترويسة</li>
+                    <li><a href="#">رابط منفصل</a></li>
+                    <li><a href="#">رابط منفصل آخر</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>مثال لعنوان.</h1>
+              <p>ملاحظة: إذا كنت تتصفح هذه الصفحة من خلال رابط <code>file://</code>، فإن أزرار "السابق" و "التالي" قد لا تظهر بسبب بعض قواعد السلامة في امتصّفحات الويب.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">سجّل اليوم</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>مثال لعنوان آخر.</h1>
+              <p>HTML5 هو الإصدار الحالي و الجديد من لغة تكوين صفحات المواقع (HyperText Markup Language). و في الإصدار الجديد يتم تقديم عدد من العناصر الجديدة والتي تسهل من فكرة تكوين الصفحات حسب ما نقوم به يدوياً في XHTML 1.0.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">تعرّف على المزيد</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>و آخر إضافي لقياس أفضل.</h1>
+              <p>HTML5 هو الإصدار الحالي و الجديد من لغة تكوين صفحات المواقع (HyperText Markup Language). و في الإصدار الجديد يتم تقديم عدد من العناصر الجديدة والتي تسهل من فكرة تكوين الصفحات حسب ما نقوم به يدوياً في XHTML 1.0.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">تصفّح المعرض</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>عنوان</h2>
+          <p>HTML5 هو الإصدار الحالي و الجديد من لغة تكوين صفحات المواقع (HyperText Markup Language). و في الإصدار الجديد يتم تقديم عدد من العناصر الجديدة والتي تسهل من فكرة تكوين الصفحات حسب ما نقوم به يدوياً في XHTML 1.0 بالإضافة إلى تسهيل الأمور على محركات البحث في قراءة الصفحات ومعرفة ما هي أجزاء الصفحة الفعلية.</p>
+          <p><a class="btn btn-default" href="#" role="button">عرض التفاصيل &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>عنوان</h2>
+          <p>HTML5 هو الإصدار الحالي و الجديد من لغة تكوين صفحات المواقع (HyperText Markup Language). و في الإصدار الجديد يتم تقديم عدد من العناصر الجديدة والتي تسهل من فكرة تكوين الصفحات حسب ما نقوم به يدوياً في XHTML 1.0 بالإضافة إلى تسهيل الأمور على محركات البحث في قراءة الصفحات ومعرفة ما هي أجزاء الصفحة الفعلية.</p>
+          <p><a class="btn btn-default" href="#" role="button">عرض التفاصيل &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>عنوان</h2>
+          <p>HTML5 هو الإصدار الحالي و الجديد من لغة تكوين صفحات المواقع (HyperText Markup Language). و في الإصدار الجديد يتم تقديم عدد من العناصر الجديدة والتي تسهل من فكرة تكوين الصفحات حسب ما نقوم به يدوياً في XHTML 1.0 بالإضافة إلى تسهيل الأمور على محركات البحث في قراءة الصفحات ومعرفة ما هي أجزاء الصفحة الفعلية.</p>
+          <p><a class="btn btn-default" href="#" role="button">عرض التفاصيل &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-عنوان">عنوان الميزة الأولى. <span class="text-muted">سوف تذهلك.</span></h2>
+          <p class="lead">HTML5 هو الإصدار الحالي و الجديد من لغة تكوين صفحات المواقع (HyperText Markup Language). و في الإصدار الجديد يتم تقديم عدد من العناصر الجديدة والتي تسهل من فكرة تكوين الصفحات حسب ما نقوم به يدوياً في XHTML 1.0 بالإضافة إلى تسهيل الأمور على محركات البحث في قراءة الصفحات ومعرفة ما هي أجزاء الصفحة الفعلية.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-عنوان">أجل، إنّها بهذه الجودة. <span class="text-muted">شاهد بنفسك.</span></h2>
+          <p class="lead">HTML5 هو الإصدار الحالي و الجديد من لغة تكوين صفحات المواقع (HyperText Markup Language). و في الإصدار الجديد يتم تقديم عدد من العناصر الجديدة والتي تسهل من فكرة تكوين الصفحات حسب ما نقوم به يدوياً في XHTML 1.0 بالإضافة إلى تسهيل الأمور على محركات البحث في قراءة الصفحات ومعرفة ما هي أجزاء الصفحة الفعلية.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-عنوان">و آخيراً, هذه الميزة. <span class="text-muted">المكمّلة.</span></h2>
+          <p class="lead">HTML5 هو الإصدار الحالي و الجديد من لغة تكوين صفحات المواقع (HyperText Markup Language). و في الإصدار الجديد يتم تقديم عدد من العناصر الجديدة والتي تسهل من فكرة تكوين الصفحات حسب ما نقوم به يدوياً في XHTML 1.0 بالإضافة إلى تسهيل الأمور على محركات البحث في قراءة الصفحات ومعرفة ما هي أجزاء الصفحة الفعلية.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-left"><a href="#">العودة إلى الأعلى</a></p>
+        <p>&copy; 2014 شركة &middot; <a href="#">الخصوصيّة</a> &middot; <a href="#">الشروط</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
