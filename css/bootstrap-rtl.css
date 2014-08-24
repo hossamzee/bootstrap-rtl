@@ -429,7 +429,11 @@ th {
     border-bottom-left-radius: 4px;
 }
 
-/* TODO: First child of button control seems to have a 2x border width. */
+.btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn,
+.btn-group .btn-group+.btn-group {
+    margin-right: -1px;
+    margin-left: 0;
+}
 
 .btn-group-justified>.btn, .btn-group-justified>.btn-group {
     float: none;
