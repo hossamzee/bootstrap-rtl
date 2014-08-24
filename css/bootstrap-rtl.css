@@ -430,7 +430,10 @@ th {
 }
 
 /* TODO: First child of button control seems to have a 2x border width. */
-/* TODO: Justified button groups have some issues. */
+
+.btn-group-justified>.btn, .btn-group-justified>.btn-group {
+    float: none;
+}
 
 /* Input groups. */
 
