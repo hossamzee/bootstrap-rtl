@@ -472,7 +472,9 @@ th {
     float: none;
 }
 
-/* TODO: nav-pills has some issue when justifying. */
+.nav-justified>li {
+    float: none;
+}
 
 /* Navbar. */
 
