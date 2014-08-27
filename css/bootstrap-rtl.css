@@ -468,7 +468,10 @@ th {
     margin-left: 0;
 }
 
-/* TODO: nav-stacked has some issues. */
+.nav-stacked>li {
+    float: none;
+}
+
 /* TODO: nav-pills has some issue when justifying. */
 
 /* Navbar. */
