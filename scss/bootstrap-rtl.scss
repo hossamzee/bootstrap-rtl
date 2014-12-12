@@ -45,6 +45,17 @@
   @include loop-grid-columns($grid-columns, $class, offset);
 }
 
+@mixin border-right-radius($radius) {
+  border-bottom-right-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+@mixin border-left-radius($radius) {
+  border-bottom-left-radius: $radius;
+  border-top-left-radius: $radius;
+}
+
+
 /* HTML direction. */
 
 html {
@@ -215,21 +226,6 @@ th {
     float: right;
 }
 
-/*.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.btn-group > .btn:last-child:not(:first-child),
-.btn-group > .dropdown-toggle:not(:first-child) {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}*/
-
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
   &:not(:last-child):not(.dropdown-toggle) {
@@ -238,7 +234,12 @@ th {
   }
 }
 
-
+// Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child) {
+  @include border-left-radius($border-radius-base);
+  @include border-right-radius(0);
+}
 
 .btn-toolbar .btn-group,
 .btn-toolbar .input-group {
@@ -246,10 +247,8 @@ th {
 }
 
 .btn-group > .btn-group:last-child > .btn:first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+  @include border-left-radius($border-radius-base);
+  @include border-right-radius(0);
 }
 
 .btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn,
@@ -266,7 +265,7 @@ th {
 
 .input-group-addon:last-child {
     border-right: 0;
-    border-left: 1px solid #ccc;
+    border-left: 1px solid $input-group-addon-border-color;
 }
 
 /* TODO: There is an issue with the middle button. */
@@ -278,37 +277,44 @@ th {
     float: right;
 }
 
-.nav-tabs > li + li {
-    margin-right: 2px;
-    margin-left: 0;
-}
+// .nav-tabs > li + li {
+//     margin-right: 2px;
+//     margin-left: 0;
+// }
 
 .nav-pills > li {
     float: right;
 }
 
-.nav-pills > li + li {
-    margin-right: 2px;
-    margin-left: 0;
-}
+// .nav-pills > li + li {
+//     margin-right: 2px;
+//     margin-left: 0;
+// }
 
-.nav-stacked>li {
+.nav-stacked > li {
     float: none;
 }
 
-.nav-justified>li {
+.nav-justified > li {
     float: none;
 }
 
 /* Navbar. */
 
-@media (min-width: 768px) {
-    .navbar-header {
-        float: right;
-    }
+// Navbar heading
+//
+// Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
+// styling of responsive aspects.
+
+.navbar-header {
+  @media (min-width: $grid-float-breakpoint) {
+    float: right;
+  }
 }
 
-@media (min-width: 768px) {
+// TODO: This might not be needed.
+
+@media (min-width: $grid-float-breakpoint) {
     .navbar-nav {
         float: right;
         margin: 0;
@@ -322,24 +328,24 @@ th {
 .navbar-toggle {
     float: left;
     margin-right: auto;
-    margin-left: 15px;
+    margin-left: $navbar-padding-horizontal;
 }
 
 .navbar-brand {
     float: right;
 }
 
-@media (min-width: 768px) {
-    .container > .navbar-header,
-    .container-fluid > .navbar-header,
-    .container > .navbar-collapse,
-    .container-fluid > .navbar-collapse {
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-}
+// @media (min-width: 768px) {
+//     .container > .navbar-header,
+//     .container-fluid > .navbar-header,
+//     .container > .navbar-collapse,
+//     .container-fluid > .navbar-collapse {
+//         margin-right: 15px;
+//         margin-left: 15px;
+//     }
+// }
 
-@media (min-width: 768px) {
+@media (min-width: $grid-float-breakpoint) {
     .navbar-text {
         float: right;
     }
@@ -356,18 +362,14 @@ th {
 
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    @include border-right-radius($border-radius-base);
+    @include border-left-radius(0);
 }
 
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    @include border-left-radius($border-radius-base);
+    @include border-right-radius(0);
 }
 
 /* Pagination. */

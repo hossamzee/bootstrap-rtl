@@ -4,7 +4,7 @@
  */
 /* Mixin. */
 /* HTML direction. */
-/* line 50, ../scss/bootstrap-rtl.scss */
+/* line 61, ../scss/bootstrap-rtl.scss */
 html {
   direction: rtl;
 }
@@ -350,13 +350,13 @@ html {
     -webkit-padding-start: 0;
 }*/
 /* Typography. */
-/* line 96, ../scss/bootstrap-rtl.scss */
+/* line 107, ../scss/bootstrap-rtl.scss */
 blockquote {
   border-right: 5px solid #eeeeee;
   border-left: 0;
 }
 
-/* line 106, ../scss/bootstrap-rtl.scss */
+/* line 117, ../scss/bootstrap-rtl.scss */
 .blockquote-reverse,
 blockquote.pull-right {
   padding-left: 15px;
@@ -367,13 +367,13 @@ blockquote.pull-right {
 }
 
 @media (min-width: 768px) {
-  /* line 121, ../scss/bootstrap-rtl.scss */
+  /* line 132, ../scss/bootstrap-rtl.scss */
   .dl-horizontal dt {
     float: right;
     clear: right;
     text-align: left;
   }
-  /* line 126, ../scss/bootstrap-rtl.scss */
+  /* line 137, ../scss/bootstrap-rtl.scss */
   .dl-horizontal dd {
     margin-right: 180px;
     margin-left: 0;
@@ -381,7 +381,7 @@ blockquote.pull-right {
 }
 
 /* Tables. */
-/* line 135, ../scss/bootstrap-rtl.scss */
+/* line 146, ../scss/bootstrap-rtl.scss */
 th {
   text-align: right;
 }
@@ -448,7 +448,7 @@ th {
     left: 0;
 }*/
 /* Dropdowns. */
-/* line 204, ../scss/bootstrap-rtl.scss */
+/* line 215, ../scss/bootstrap-rtl.scss */
 .dropdown-menu {
   right: 0;
   left: auto;
@@ -457,146 +457,125 @@ th {
 }
 
 /* Button groups. */
-/* line 214, ../scss/bootstrap-rtl.scss */
+/* line 225, ../scss/bootstrap-rtl.scss */
 .btn-group > .btn,
 .btn-group-vertical > .btn {
   float: right;
 }
 
-/* line 218, ../scss/bootstrap-rtl.scss */
+/* line 231, ../scss/bootstrap-rtl.scss */
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
-  border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
   border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
-/* line 226, ../scss/bootstrap-rtl.scss */
+/* line 239, ../scss/bootstrap-rtl.scss */
 .btn-group > .btn:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
-  border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  border-top-right-radius: 0;
+  border-top-left-radius: 4px;
   border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
-/* line 234, ../scss/bootstrap-rtl.scss */
+/* line 245, ../scss/bootstrap-rtl.scss */
 .btn-toolbar .btn-group,
 .btn-toolbar .input-group {
   float: right;
 }
 
-/* line 238, ../scss/bootstrap-rtl.scss */
+/* line 249, ../scss/bootstrap-rtl.scss */
 .btn-group > .btn-group:last-child > .btn:first-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
-/* line 246, ../scss/bootstrap-rtl.scss */
+/* line 255, ../scss/bootstrap-rtl.scss */
 .btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn,
 .btn-group .btn-group + .btn-group {
   margin-right: -1px;
   margin-left: 0;
 }
 
-/* line 251, ../scss/bootstrap-rtl.scss */
+/* line 260, ../scss/bootstrap-rtl.scss */
 .btn-group-justified > .btn, .btn-group-justified > .btn-group {
   float: none;
 }
 
 /* Input groups. */
-/* line 257, ../scss/bootstrap-rtl.scss */
+/* line 266, ../scss/bootstrap-rtl.scss */
 .input-group-addon:last-child {
   border-right: 0;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #cccccc;
 }
 
 /* TODO: There is an issue with the middle button. */
 /* It could be ignored for now. */
 /* Navs. */
-/* line 267, ../scss/bootstrap-rtl.scss */
+/* line 276, ../scss/bootstrap-rtl.scss */
 .nav-tabs > li {
   float: right;
 }
 
-/* line 271, ../scss/bootstrap-rtl.scss */
-.nav-tabs > li + li {
-  margin-right: 2px;
-  margin-left: 0;
-}
-
-/* line 276, ../scss/bootstrap-rtl.scss */
+/* line 285, ../scss/bootstrap-rtl.scss */
 .nav-pills > li {
   float: right;
 }
 
-/* line 280, ../scss/bootstrap-rtl.scss */
-.nav-pills > li + li {
-  margin-right: 2px;
-  margin-left: 0;
-}
-
-/* line 285, ../scss/bootstrap-rtl.scss */
+/* line 294, ../scss/bootstrap-rtl.scss */
 .nav-stacked > li {
   float: none;
 }
 
-/* line 289, ../scss/bootstrap-rtl.scss */
+/* line 298, ../scss/bootstrap-rtl.scss */
 .nav-justified > li {
   float: none;
 }
 
 /* Navbar. */
 @media (min-width: 768px) {
-  /* line 296, ../scss/bootstrap-rtl.scss */
+  /* line 309, ../scss/bootstrap-rtl.scss */
   .navbar-header {
     float: right;
   }
 }
+
 @media (min-width: 768px) {
-  /* line 302, ../scss/bootstrap-rtl.scss */
+  /* line 318, ../scss/bootstrap-rtl.scss */
   .navbar-nav {
     float: right;
     margin: 0;
   }
 
-  /* line 307, ../scss/bootstrap-rtl.scss */
+  /* line 323, ../scss/bootstrap-rtl.scss */
   .navbar-nav > li {
     float: right;
   }
 }
-/* line 312, ../scss/bootstrap-rtl.scss */
+/* line 328, ../scss/bootstrap-rtl.scss */
 .navbar-toggle {
   float: left;
   margin-right: auto;
   margin-left: 15px;
 }
 
-/* line 318, ../scss/bootstrap-rtl.scss */
+/* line 334, ../scss/bootstrap-rtl.scss */
 .navbar-brand {
   float: right;
 }
 
 @media (min-width: 768px) {
-  /* line 326, ../scss/bootstrap-rtl.scss */
-  .container > .navbar-header,
-  .container-fluid > .navbar-header,
-  .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse {
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-}
-@media (min-width: 768px) {
-  /* line 333, ../scss/bootstrap-rtl.scss */
+  /* line 349, ../scss/bootstrap-rtl.scss */
   .navbar-text {
     float: right;
   }
 }
 /* Breadcrumbs. */
-/* line 341, ../scss/bootstrap-rtl.scss */
+/* line 357, ../scss/bootstrap-rtl.scss */
 .pagination > li > a,
 .pagination > li > span {
   float: right;
@@ -604,51 +583,51 @@ th {
   margin-left: 0;
 }
 
-/* line 348, ../scss/bootstrap-rtl.scss */
+/* line 364, ../scss/bootstrap-rtl.scss */
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
-  border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
   border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
-/* line 356, ../scss/bootstrap-rtl.scss */
+/* line 370, ../scss/bootstrap-rtl.scss */
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
-  border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  border-top-right-radius: 0;
+  border-top-left-radius: 4px;
   border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 /* Pagination. */
-/* line 366, ../scss/bootstrap-rtl.scss */
+/* line 378, ../scss/bootstrap-rtl.scss */
 .pager .next > a,
 .pager .next > span {
   float: left;
 }
 
-/* line 371, ../scss/bootstrap-rtl.scss */
+/* line 383, ../scss/bootstrap-rtl.scss */
 .pager .previous > a,
 .pager .previous > span {
   float: right;
 }
 
 /* Progress bars. */
-/* line 377, ../scss/bootstrap-rtl.scss */
+/* line 389, ../scss/bootstrap-rtl.scss */
 .progress-bar {
   float: right;
 }
 
 /* List group. */
-/* line 383, ../scss/bootstrap-rtl.scss */
+/* line 395, ../scss/bootstrap-rtl.scss */
 .list-group-item > .badge {
   float: left;
 }
 
 /* Modals. */
-/* line 389, ../scss/bootstrap-rtl.scss */
+/* line 401, ../scss/bootstrap-rtl.scss */
 .close {
   float: left;
 }
