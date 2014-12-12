@@ -1,331 +1,393 @@
 /*
  * Bootstrap framework RTL.
  * Author: Hussam Al-Zughaibi <hossam_zee@yahoo.com>.
- * Date: 20 Aug 2014.
  */
-
-* {
-    -webkit-margin-start: 0;
-    -webkit-padding-start: 0;
-}
-
+/* Mixin. */
+/* HTML direction. */
+/* line 50, ../scss/bootstrap-rtl.scss */
 html {
-	direction: rtl;
+  direction: rtl;
 }
 
 /* Grid system. */
-
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
-.col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-    float: right;
+/* line 21, ../scss/bootstrap-rtl.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: right;
 }
 
-.col-xs-offset-12 {
-    margin-right: 100%;
-    margin-left: 0;
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-0 {
+  margin-right: 0%;
+  margin-left: 0;
 }
 
-.col-xs-offset-11 {
-    margin-right: 91.66666667%;
-    margin-left: 0;
-}
-
-.col-xs-offset-10 {
-    margin-right: 83.33333333%;
-    margin-left: 0;
-}
-
-.col-xs-offset-9 {
-    margin-right: 75%;
-    margin-left: 0;
-}
-
-.col-xs-offset-8 {
-    margin-right: 66.66666667%;
-    margin-left: 0;
-}
-
-.col-xs-offset-7 {
-    margin-right: 58.33333333%;
-    margin-left: 0;
-}
-
-.col-xs-offset-6 {
-    margin-right: 50%;
-    margin-left: 0;
-}
-
-.col-xs-offset-5 {
-    margin-right: 41.66666667%;
-    margin-left: 0;
-}
-
-.col-xs-offset-4 {
-    margin-right: 33.33333333%;
-    margin-left: 0;
-}
-
-.col-xs-offset-3 {
-    margin-right: 25%;
-    margin-left: 0;
-}
-
-.col-xs-offset-2 {
-    margin-right: 16.66666667%;
-    margin-left: 0;
-}
-
+/* line 28, ../scss/bootstrap-rtl.scss */
 .col-xs-offset-1 {
-    margin-right: 8.33333333%;
-    margin-left: 0;
+  margin-right: 8.33333%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-2 {
+  margin-right: 16.66667%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-3 {
+  margin-right: 25%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-4 {
+  margin-right: 33.33333%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-5 {
+  margin-right: 41.66667%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-6 {
+  margin-right: 50%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-7 {
+  margin-right: 58.33333%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-8 {
+  margin-right: 66.66667%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-9 {
+  margin-right: 75%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-10 {
+  margin-right: 83.33333%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-11 {
+  margin-right: 91.66667%;
+  margin-left: 0;
+}
+
+/* line 28, ../scss/bootstrap-rtl.scss */
+.col-xs-offset-12 {
+  margin-right: 100%;
+  margin-left: 0;
 }
 
 @media (min-width: 768px) {
-    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
-    .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-        float: right;
-    }
+  /* line 21, ../scss/bootstrap-rtl.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: right;
+  }
 
-    .col-sm-offset-12 {
-        margin-right: 100%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-0 {
+    margin-right: 0%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-11 {
-        margin-right: 91.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-1 {
+    margin-right: 8.33333%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-10 {
-        margin-right: 83.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-2 {
+    margin-right: 16.66667%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-9 {
-        margin-right: 75%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-3 {
+    margin-right: 25%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-8 {
-        margin-right: 66.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-4 {
+    margin-right: 33.33333%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-7 {
-        margin-right: 58.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-5 {
+    margin-right: 41.66667%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-6 {
-        margin-right: 50%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-6 {
+    margin-right: 50%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-5 {
-        margin-right: 41.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-7 {
+    margin-right: 58.33333%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-4 {
-        margin-right: 33.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-8 {
+    margin-right: 66.66667%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-3 {
-        margin-right: 25%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-9 {
+    margin-right: 75%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-2 {
-        margin-right: 16.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-10 {
+    margin-right: 83.33333%;
+    margin-left: 0;
+  }
 
-    .col-sm-offset-1 {
-        margin-right: 8.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-11 {
+    margin-right: 91.66667%;
+    margin-left: 0;
+  }
+
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-sm-offset-12 {
+    margin-right: 100%;
+    margin-left: 0;
+  }
 }
-
 @media (min-width: 992px) {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
-    .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-        float: right;
-    }
+  /* line 21, ../scss/bootstrap-rtl.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: right;
+  }
 
-    .col-md-offset-12 {
-        margin-right: 100%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-0 {
+    margin-right: 0%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-11 {
-        margin-right: 91.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-1 {
+    margin-right: 8.33333%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-10 {
-        margin-right: 83.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-2 {
+    margin-right: 16.66667%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-9 {
-        margin-right: 75%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-3 {
+    margin-right: 25%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-8 {
-        margin-right: 66.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-4 {
+    margin-right: 33.33333%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-7 {
-        margin-right: 58.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-5 {
+    margin-right: 41.66667%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-6 {
-        margin-right: 50%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-6 {
+    margin-right: 50%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-5 {
-        margin-right: 41.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-7 {
+    margin-right: 58.33333%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-4 {
-        margin-right: 33.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-8 {
+    margin-right: 66.66667%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-3 {
-        margin-right: 25%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-9 {
+    margin-right: 75%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-2 {
-        margin-right: 16.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-10 {
+    margin-right: 83.33333%;
+    margin-left: 0;
+  }
 
-    .col-md-offset-1 {
-        margin-right: 8.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-11 {
+    margin-right: 91.66667%;
+    margin-left: 0;
+  }
+
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-md-offset-12 {
+    margin-right: 100%;
+    margin-left: 0;
+  }
 }
-
 @media (min-width: 1200px) {
-    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
-    .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-        float: right;
-    }
+  /* line 21, ../scss/bootstrap-rtl.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: right;
+  }
 
-    .col-lg-offset-12 {
-        margin-right: 100%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-0 {
+    margin-right: 0%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-11 {
-        margin-right: 91.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-1 {
+    margin-right: 8.33333%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-10 {
-        margin-right: 83.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-2 {
+    margin-right: 16.66667%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-9 {
-        margin-right: 75%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-3 {
+    margin-right: 25%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-8 {
-        margin-right: 66.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-4 {
+    margin-right: 33.33333%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-7 {
-        margin-right: 58.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-5 {
+    margin-right: 41.66667%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-6 {
-        margin-right: 50%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-6 {
+    margin-right: 50%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-5 {
-        margin-right: 41.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-7 {
+    margin-right: 58.33333%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-4 {
-        margin-right: 33.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-8 {
+    margin-right: 66.66667%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-3 {
-        margin-right: 25%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-9 {
+    margin-right: 75%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-2 {
-        margin-right: 16.66666667%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-10 {
+    margin-right: 83.33333%;
+    margin-left: 0;
+  }
 
-    .col-lg-offset-1 {
-        margin-right: 8.33333333%;
-        margin-left: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-11 {
+    margin-right: 91.66667%;
+    margin-left: 0;
+  }
 
-    /* This line is in here only. */
-    .col-lg-offset-0 {
-        margin-right: 0;
-    }
+  /* line 28, ../scss/bootstrap-rtl.scss */
+  .col-lg-offset-12 {
+    margin-right: 100%;
+    margin-left: 0;
+  }
 }
-
+/** {
+    -webkit-margin-start: 0;
+    -webkit-padding-start: 0;
+}*/
 /* Typography. */
-
-/* TODO: It should be taken in consideration. */
+/* line 96, ../scss/bootstrap-rtl.scss */
 blockquote {
-  border-right: 5px solid #eee;
+  border-right: 5px solid #eeeeee;
   border-left: 0;
 }
 
+/* line 106, ../scss/bootstrap-rtl.scss */
 .blockquote-reverse,
-blockquote.pull-left {
-    padding-left: 15px;
-    padding-right: 0;
-    text-align: left;
-    border-left: 5px solid #eee;
-    border-right: 0;
+blockquote.pull-right {
+  padding-left: 15px;
+  padding-right: 0;
+  border-left: 5px solid #eeeeee;
+  border-right: 0;
+  text-align: left;
 }
 
-
 @media (min-width: 768px) {
-    .dl-horizontal dt {
-        float: right;
-        clear: right;
-        text-align: left;
-    }
-
-    .dl-horizontal dd {
-        margin-right: 180px;
-        margin-left: 0;
-    }
+  /* line 121, ../scss/bootstrap-rtl.scss */
+  .dl-horizontal dt {
+    float: right;
+    clear: right;
+    text-align: left;
+  }
+  /* line 126, ../scss/bootstrap-rtl.scss */
+  .dl-horizontal dd {
+    margin-right: 180px;
+    margin-left: 0;
+  }
 }
 
 /* Tables. */
-
+/* line 135, ../scss/bootstrap-rtl.scss */
 th {
-    text-align: right;
+  text-align: right;
 }
 
-/* Forms. */
-
-.radio label,
+/* TODO: Forms. */
+/*.radio label,
 .checkbox label {
     padding-left: 0;
     padding-right: 20px;
@@ -384,197 +446,211 @@ th {
 .form-control-feedback {
     right: auto;
     left: 0;
-}
-
+}*/
 /* Dropdowns. */
-
+/* line 204, ../scss/bootstrap-rtl.scss */
 .dropdown-menu {
-    left: auto;
-    right: 0;
-    float: right;
-    text-align: right;
+  right: 0;
+  left: auto;
+  float: right;
+  text-align: right;
 }
 
 /* Button groups. */
-
+/* line 214, ../scss/bootstrap-rtl.scss */
 .btn-group > .btn,
 .btn-group-vertical > .btn {
-    float: right;
+  float: right;
 }
 
+/* line 218, ../scss/bootstrap-rtl.scss */
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
+/* line 226, ../scss/bootstrap-rtl.scss */
 .btn-group > .btn:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
+/* line 234, ../scss/bootstrap-rtl.scss */
 .btn-toolbar .btn-group,
 .btn-toolbar .input-group {
-    float: right;
+  float: right;
 }
 
+/* line 238, ../scss/bootstrap-rtl.scss */
 .btn-group > .btn-group:last-child > .btn:first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
-.btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn,
-.btn-group .btn-group+.btn-group {
-    margin-right: -1px;
-    margin-left: 0;
+/* line 246, ../scss/bootstrap-rtl.scss */
+.btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn,
+.btn-group .btn-group + .btn-group {
+  margin-right: -1px;
+  margin-left: 0;
 }
 
-.btn-group-justified>.btn, .btn-group-justified>.btn-group {
-    float: none;
+/* line 251, ../scss/bootstrap-rtl.scss */
+.btn-group-justified > .btn, .btn-group-justified > .btn-group {
+  float: none;
 }
 
 /* Input groups. */
-
+/* line 257, ../scss/bootstrap-rtl.scss */
 .input-group-addon:last-child {
-    border-right: 0;
-    border-left: 1px solid #ccc;
+  border-right: 0;
+  border-left: 1px solid #ccc;
 }
 
 /* TODO: There is an issue with the middle button. */
 /* It could be ignored for now. */
-
 /* Navs. */
-
+/* line 267, ../scss/bootstrap-rtl.scss */
 .nav-tabs > li {
-    float: right;
+  float: right;
 }
 
+/* line 271, ../scss/bootstrap-rtl.scss */
 .nav-tabs > li + li {
-    margin-right: 2px;
-    margin-left: 0;
+  margin-right: 2px;
+  margin-left: 0;
 }
 
+/* line 276, ../scss/bootstrap-rtl.scss */
 .nav-pills > li {
-    float: right;
+  float: right;
 }
 
+/* line 280, ../scss/bootstrap-rtl.scss */
 .nav-pills > li + li {
-    margin-right: 2px;
-    margin-left: 0;
+  margin-right: 2px;
+  margin-left: 0;
 }
 
-.nav-stacked>li {
-    float: none;
+/* line 285, ../scss/bootstrap-rtl.scss */
+.nav-stacked > li {
+  float: none;
 }
 
-.nav-justified>li {
-    float: none;
+/* line 289, ../scss/bootstrap-rtl.scss */
+.nav-justified > li {
+  float: none;
 }
 
 /* Navbar. */
-
 @media (min-width: 768px) {
-    .navbar-header {
-        float: right;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar-nav {
-        float: right;
-        margin: 0;
-    }
-
-    .navbar-nav > li {
-        float: right;
-    }
-}
-
-.navbar-toggle {
-    float: left;
-    margin-right: auto;
-    margin-left: 15px;
-}
-
-.navbar-brand {
+  /* line 296, ../scss/bootstrap-rtl.scss */
+  .navbar-header {
     float: right;
+  }
+}
+@media (min-width: 768px) {
+  /* line 302, ../scss/bootstrap-rtl.scss */
+  .navbar-nav {
+    float: right;
+    margin: 0;
+  }
+
+  /* line 307, ../scss/bootstrap-rtl.scss */
+  .navbar-nav > li {
+    float: right;
+  }
+}
+/* line 312, ../scss/bootstrap-rtl.scss */
+.navbar-toggle {
+  float: left;
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+/* line 318, ../scss/bootstrap-rtl.scss */
+.navbar-brand {
+  float: right;
 }
 
 @media (min-width: 768px) {
-    .container > .navbar-header,
-    .container-fluid > .navbar-header,
-    .container > .navbar-collapse,
-    .container-fluid > .navbar-collapse {
-        margin-right: 15px;
-        margin-left: 15px;
-    }
+  /* line 326, ../scss/bootstrap-rtl.scss */
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 }
-
 @media (min-width: 768px) {
-    .navbar-text {
-        float: right;
-    }
+  /* line 333, ../scss/bootstrap-rtl.scss */
+  .navbar-text {
+    float: right;
+  }
 }
-
 /* Breadcrumbs. */
-
+/* line 341, ../scss/bootstrap-rtl.scss */
 .pagination > li > a,
 .pagination > li > span {
-    float: right;
-    margin-right: -1px;
-    margin-left: 0;
+  float: right;
+  margin-right: -1px;
+  margin-left: 0;
 }
 
+/* line 348, ../scss/bootstrap-rtl.scss */
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
+/* line 356, ../scss/bootstrap-rtl.scss */
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 /* Pagination. */
-
+/* line 366, ../scss/bootstrap-rtl.scss */
 .pager .next > a,
 .pager .next > span {
-    float: left;
+  float: left;
 }
 
+/* line 371, ../scss/bootstrap-rtl.scss */
 .pager .previous > a,
 .pager .previous > span {
-    float: right;
+  float: right;
 }
 
 /* Progress bars. */
-
+/* line 377, ../scss/bootstrap-rtl.scss */
 .progress-bar {
-    float: right;
+  float: right;
 }
 
 /* List group. */
-
+/* line 383, ../scss/bootstrap-rtl.scss */
 .list-group-item > .badge {
-    float: left;
+  float: left;
 }
 
 /* Modals. */
-
+/* line 389, ../scss/bootstrap-rtl.scss */
 .close {
-    float: left;
+  float: left;
 }
 
 /* TODO: Carousel. */
